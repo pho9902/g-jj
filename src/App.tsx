@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import First from "components/First";
 import Main from "components/Main";
+import GameList from "components/GameList";
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<First />}></Route>
           <Route path="/main" element={<Main />}></Route>
+          <Route path="/gamelist/:players" element={<GameList />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
