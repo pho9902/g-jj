@@ -1,4 +1,5 @@
 import { useState } from "react";
+import * as S from "./emotion";
 
 interface DotProps {
   // condition: "N" | "B" | "W";
@@ -8,5 +9,5 @@ interface DotProps {
 
 export default function Dot(props: DotProps) {
   const [condition, setCondition] = useState("N");
-  return <div>{condition}</div>;
+  return <S.Wrap>{condition}</S.Wrap>;
 }

@@ -1,45 +1,57 @@
 import Dot from "./Dot";
+import * as S from "./emotion";
 
 export default function Morris() {
   return (
-    <div>
-      <div id="BigSquare">
-        <div id="Row">
+    <S.Wrap>
+      <S.Square size="B">
+        <S.Row>
           <Dot />
           <Dot />
           <Dot />
-        </div>
-        <div id="Row">
+        </S.Row>
+        <S.Row>
           <Dot />
           <Dot />
-        </div>
-        <div id="Row">
-          <Dot />
-          <Dot />
-          <Dot />
-        </div>
-      </div>
-      <div id="MiddleSquare">
-        <div id="Row">
+        </S.Row>
+        <S.Row>
           <Dot />
           <Dot />
           <Dot />
-        </div>
-        <div id="Row">
-          <Dot />
-          <Dot />
-        </div>
-        <div id="Row">
+        </S.Row>
+      </S.Square>
+      <S.Square size="M">
+        <S.Row>
           <Dot />
           <Dot />
           <Dot />
-        </div>
-      </div>
-      <div id="SmallSquare">
-        <div id="Row"></div>
-        <div id="Row"></div>
-        <div id="Row"></div>
-      </div>
-    </div>
+        </S.Row>
+        <S.Row>
+          <Dot />
+          <Dot />
+        </S.Row>
+        <S.Row>
+          <Dot />
+          <Dot />
+          <Dot />
+        </S.Row>
+      </S.Square>
+      <S.Square size="S">
+        <S.Row>
+          <Dot />
+          <Dot />
+          <Dot />
+        </S.Row>
+        <S.Row>
+          <Dot />
+          <Dot />
+        </S.Row>
+        <S.Row>
+          <Dot />
+          <Dot />
+          <Dot />
+        </S.Row>
+      </S.Square>
+    </S.Wrap>
   );
 }
